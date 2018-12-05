@@ -1,0 +1,61 @@
+\hypertarget{class_geometric}{}\section{Geometric Class Reference}
+\label{class_geometric}\index{Geometric@{Geometric}}
+
+
+{\ttfamily \#include $<$Geometric.\+hpp$>$}
+
+
+
+Inheritance diagram for Geometric\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{class_geometric__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Geometric\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{class_geometric__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_geometric_a741e184fee4d9abdeb2f565870eba117}\label{class_geometric_a741e184fee4d9abdeb2f565870eba117}} 
+\hyperlink{class_geometric_a741e184fee4d9abdeb2f565870eba117}{Geometric} ()
+\begin{DoxyCompactList}\small\item\em Default constructor with probability equal to 0.\+5. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_geometric_a4e85b6271700782d644f56c5b90b4966}\label{class_geometric_a4e85b6271700782d644f56c5b90b4966}} 
+\hyperlink{class_geometric_a4e85b6271700782d644f56c5b90b4966}{Geometric} (double p)
+\begin{DoxyCompactList}\small\item\em Overloaded constructor taking another probability of success. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_geometric_a486dd9216795ae5ecd3579598c62632c}\label{class_geometric_a486dd9216795ae5ecd3579598c62632c}} 
+double \hyperlink{class_geometric_a486dd9216795ae5ecd3579598c62632c}{get\+\_\+probability} ()
+\begin{DoxyCompactList}\small\item\em Returns probability of success. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_geometric_a248e4a0a34c8681a5b3b889a4896a863}\label{class_geometric_a248e4a0a34c8681a5b3b889a4896a863}} 
+int \hyperlink{class_geometric_a248e4a0a34c8681a5b3b889a4896a863}{generate} () override
+\begin{DoxyCompactList}\small\item\em Generates one geometric random variable. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_geometric_af1a6be5d5c92415648017a7e5eb87ecd}\label{class_geometric_af1a6be5d5c92415648017a7e5eb87ecd}} 
+std\+::vector$<$ int $>$ \hyperlink{class_geometric_af1a6be5d5c92415648017a7e5eb87ecd}{generate} (int n) override
+\begin{DoxyCompactList}\small\item\em Generates n geometric random variables. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_geometric_a8cf85792786df62248c0245bab9c6d28}\label{class_geometric_a8cf85792786df62248c0245bab9c6d28}} 
+\hyperlink{class_uniform}{Uniform} \hyperlink{class_geometric_a8cf85792786df62248c0245bab9c6d28}{uniform}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_uniform}{Uniform} distribution used to generate normal random samples. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_geometric_abb5f3ad35a83e34e4ea139af69f13fe8}\label{class_geometric_abb5f3ad35a83e34e4ea139af69f13fe8}} 
+double \hyperlink{class_geometric_abb5f3ad35a83e34e4ea139af69f13fe8}{probability}
+\begin{DoxyCompactList}\small\item\em Probability of success for each trial. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This is the class of geometric distributions. It is defined as the number of failures before success so has support \{0, 1, 2, ... \} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Geometric.\+hpp\item 
+Geometric.\+cpp\end{DoxyCompactItemize}
