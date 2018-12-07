@@ -11,15 +11,16 @@ class VerifyCLT {
 private:
     int num_samples;
     int num_trials;
-    Distribution<double>* distribution;
+    Distribution* distribution;
 
 public:
+    VerifyCLT(int n, int N, Distribution* distribution);
     void set_num_samples(int n);
     int get_num_samples();
     void set_num_trials(int n);
     int get_num_trials();
     void histogram();
-    void qq_plot();
+//    void qq_plot();
 };
 
 

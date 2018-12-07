@@ -9,8 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/monte_carlo.dir/Moments.cpp.o"
   "CMakeFiles/monte_carlo.dir/VerifyCLT.cpp.o"
   "CMakeFiles/monte_carlo.dir/Expectation.cpp.o"
-  "monte_carlo.pdb"
-  "monte_carlo"
+  "======monte_carlo.pdb"
+  "======monte_carlo"
 )
 
 # Per-language clean rules from dependency scanning.

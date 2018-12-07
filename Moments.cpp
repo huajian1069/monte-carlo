@@ -10,16 +10,12 @@
 #include "Expectation.hpp"
 #include <cmath>
 
-inline double trivial_func2(double x) {
-    return x;
-}
+inline double identity(double x) { return x; }
 
 Moments::Moments() {
-//    Uniform uniform;
     p = 1;
     central = false;
-    user_defined_function = trivial_func2; // Initialise to trivial function
-//    distribution = uniform;
+    user_defined_function = identity; // Initialise to trivial function
 }
 
 Moments::Moments(int order, bool centered, double(*f)(double), Distribution* dist) {
@@ -77,3 +73,31 @@ double Moments::calculate(std::vector<double> random_vector) {
     return mom;
 }
 
+double Moments::visualise_monte_carlo(std::vector<int> my_n_values) {
+    std::vector<double> my_expectations;
+    for (auto n : my_n_values) {
+        std::vector<double> sample = distribution->generate(n);
+        std::vector<double> function_of_sample(sample); // Copy
+        if (!central) {
+            for (auto f : function_of_sample) {
+                f = pow(user_defined_function(f),p); // Apply the function
+            }
+            double sample_mean_of_function = std::accumulate(function_of_sample.begin(), function_of_sample.end(), 0.0)/function_of_sample.size();
+            my_expectations.push_back(sample_mean_of_function); // put the mean in the expectation vector
+        } else {
+            for (auto f : function_of_sample) {
+                f = user_defined_function(f); // Apply the function
+            }
+            double mean = std::accumulate(function_of_sample.begin(), function_of_sample.end(), 0.0)/function_of_sample.size();
+            for (auto f : function_of_sample) {
+                f = pow(f-mean,p);
+            }
+            my_expectations.push_back(std::accumulate(function_of_sample.begin(), function_of_sample.end(), 0.0)/function_of_sample.size()); // put the mean in the expectation vector
+        }
+    }
+    matplotlibcpp::figure_size(1200,780);
+    matplotlibcpp::plot(my_n_values,my_expectations,"bo-");
+    matplotlibcpp::title("Monte Carlo Expectation vs Number of Samples");
+    matplotlibcpp::show();
+    return 0;
+}

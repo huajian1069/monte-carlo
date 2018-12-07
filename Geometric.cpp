@@ -23,14 +23,22 @@ double Geometric::get_probability() {
     return probability;
 }
 
-int Geometric::generate() {
+double Geometric::mean() {
+    return (1-probability) / probability;
+}
+
+double Geometric::std_dev() {
+    return sqrt(1-probability) / probability;
+}
+
+double Geometric::generate() {
     double U = uniform.generate();
     return int(floor(log(U)/log(1-probability)));
 }
 
-std::vector<int> Geometric::generate(int n) {
+std::vector<double> Geometric::generate(int n) {
     std::vector<double> input = uniform.generate(n);
-    std::vector<int> output(n);
+    std::vector<double> output(n);
     auto it = output.begin();
     auto end = output.end();
     for (; it != end; ++it) {

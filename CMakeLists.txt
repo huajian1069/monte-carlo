@@ -11,10 +11,19 @@ add_executable(monte_carlo main.cpp Exception.hpp
         Geometric.cpp Geometric.hpp Exception.hpp Moments.cpp Moments.hpp
         VerifyCLT.cpp VerifyCLT.hpp Expectation.cpp Expectation.hpp)
 
+#find_package(Boost 1.67 COMPONENTS system filesystem iostreams REQUIRED)
+find_package(PythonLibs 2.7)
+
+
+#add_executable(monte_carlo main.cpp Exception.hpp Distribution.hpp Distribution.cpp Uniform.cpp Uniform.hpp Normal.cpp Normal.hpp Exponential.cpp Exponential.hpp Geometric.cpp Geometric.hpp Exception.hpp Moments.cpp Moments.hpp VerifyCLT.hpp VerifyCLT.cpp)
+
+#target_link_libraries(monte_carlo PUBLIC ${Boost_LIBRARIES})
+
+
 ################################################################
 # Matplotlib-cpp
 ################################################################
-find_package(PythonLibs 2.7)
+#find_package(PythonLibs 2.7)
 target_include_directories(monte_carlo PRIVATE ${PYTHON_INCLUDE_DIRS})
 target_link_libraries(monte_carlo ${PYTHON_LIBRARIES})
 
