@@ -10,23 +10,21 @@
 #include "Expectation.hpp"
 #include <cmath>
 
-inline double trivial_func2(double x) {
-    return x;
-}
 
 Moments::Moments() {
 //    Uniform uniform;
     p = 1;
     central = false;
-    user_defined_function = trivial_func2; // Initialise to trivial function
+    user_defined_function = trivial_func; // Initialise to null pointer
 //    distribution = uniform;
 }
 
-Moments::Moments(int order, bool centered, double(*f)(double), Distribution* dist) {
+Moments::Moments(int order, bool centered, double(*f)(double)) {
+//        , Distribution<double>& dist) {
     p = order;
     central = centered;
     user_defined_function = f;
-    distribution = dist;
+//    distribution = dist;
 }
 
 void Moments::set_p(int order) {

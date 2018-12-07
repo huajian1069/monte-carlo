@@ -4,6 +4,9 @@
 CMakeFiles/monte_carlo.dir/Distribution.cpp.o: ../Distribution.cpp
 CMakeFiles/monte_carlo.dir/Distribution.cpp.o: ../Distribution.hpp
 
+CMakeFiles/monte_carlo.dir/Expectation.cpp.o: ../Expectation.cpp
+CMakeFiles/monte_carlo.dir/Expectation.cpp.o: ../Expectation.hpp
+
 CMakeFiles/monte_carlo.dir/Exponential.cpp.o: ../Distribution.hpp
 CMakeFiles/monte_carlo.dir/Exponential.cpp.o: ../Exception.hpp
 CMakeFiles/monte_carlo.dir/Exponential.cpp.o: ../Exponential.cpp
@@ -18,6 +21,7 @@ CMakeFiles/monte_carlo.dir/Geometric.cpp.o: ../Uniform.hpp
 
 CMakeFiles/monte_carlo.dir/Moments.cpp.o: ../Distribution.hpp
 CMakeFiles/monte_carlo.dir/Moments.cpp.o: ../Exception.hpp
+CMakeFiles/monte_carlo.dir/Moments.cpp.o: ../Expectation.hpp
 CMakeFiles/monte_carlo.dir/Moments.cpp.o: ../Moments.cpp
 CMakeFiles/monte_carlo.dir/Moments.cpp.o: ../Moments.hpp
 CMakeFiles/monte_carlo.dir/Moments.cpp.o: ../Uniform.hpp
@@ -69,21 +73,6 @@ CMakeFiles/monte_carlo.dir/VerifyCLT.cpp.o: /usr/include/python2.7/memoryobject.
 CMakeFiles/monte_carlo.dir/VerifyCLT.cpp.o: /usr/include/python2.7/methodobject.h
 CMakeFiles/monte_carlo.dir/VerifyCLT.cpp.o: /usr/include/python2.7/modsupport.h
 CMakeFiles/monte_carlo.dir/VerifyCLT.cpp.o: /usr/include/python2.7/moduleobject.h
-CMakeFiles/monte_carlo.dir/VerifyCLT.cpp.o: /usr/include/python2.7/numpy/__multiarray_api.h
-CMakeFiles/monte_carlo.dir/VerifyCLT.cpp.o: /usr/include/python2.7/numpy/_neighborhood_iterator_imp.h
-CMakeFiles/monte_carlo.dir/VerifyCLT.cpp.o: /usr/include/python2.7/numpy/_numpyconfig.h
-CMakeFiles/monte_carlo.dir/VerifyCLT.cpp.o: /usr/include/python2.7/numpy/arrayobject.h
-CMakeFiles/monte_carlo.dir/VerifyCLT.cpp.o: /usr/include/python2.7/numpy/ndarrayobject.h
-CMakeFiles/monte_carlo.dir/VerifyCLT.cpp.o: /usr/include/python2.7/numpy/ndarraytypes.h
-CMakeFiles/monte_carlo.dir/VerifyCLT.cpp.o: /usr/include/python2.7/numpy/noprefix.h
-CMakeFiles/monte_carlo.dir/VerifyCLT.cpp.o: /usr/include/python2.7/numpy/npy_1_7_deprecated_api.h
-CMakeFiles/monte_carlo.dir/VerifyCLT.cpp.o: /usr/include/python2.7/numpy/npy_common.h
-CMakeFiles/monte_carlo.dir/VerifyCLT.cpp.o: /usr/include/python2.7/numpy/npy_cpu.h
-CMakeFiles/monte_carlo.dir/VerifyCLT.cpp.o: /usr/include/python2.7/numpy/npy_endian.h
-CMakeFiles/monte_carlo.dir/VerifyCLT.cpp.o: /usr/include/python2.7/numpy/npy_interrupt.h
-CMakeFiles/monte_carlo.dir/VerifyCLT.cpp.o: /usr/include/python2.7/numpy/numpyconfig.h
-CMakeFiles/monte_carlo.dir/VerifyCLT.cpp.o: /usr/include/python2.7/numpy/old_defines.h
-CMakeFiles/monte_carlo.dir/VerifyCLT.cpp.o: /usr/include/python2.7/numpy/utils.h
 CMakeFiles/monte_carlo.dir/VerifyCLT.cpp.o: /usr/include/python2.7/object.h
 CMakeFiles/monte_carlo.dir/VerifyCLT.cpp.o: /usr/include/python2.7/objimpl.h
 CMakeFiles/monte_carlo.dir/VerifyCLT.cpp.o: /usr/include/python2.7/patchlevel.h
@@ -115,6 +104,7 @@ CMakeFiles/monte_carlo.dir/VerifyCLT.cpp.o: /usr/include/python2.7/weakrefobject
 
 CMakeFiles/monte_carlo.dir/main.cpp.o: ../Distribution.hpp
 CMakeFiles/monte_carlo.dir/main.cpp.o: ../Exception.hpp
+CMakeFiles/monte_carlo.dir/main.cpp.o: ../Expectation.hpp
 CMakeFiles/monte_carlo.dir/main.cpp.o: ../Exponential.hpp
 CMakeFiles/monte_carlo.dir/main.cpp.o: ../Geometric.hpp
 CMakeFiles/monte_carlo.dir/main.cpp.o: ../Moments.hpp

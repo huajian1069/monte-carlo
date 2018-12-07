@@ -14,7 +14,7 @@ private:
     int p;
     bool central;
     double (*user_defined_function)(double);
-    Distribution<double>* distribution; // CHECK THIS IMPLEMENTATION - how to use template <result_type>?
+    Distributio<type>* distribution; // CHECK THIS IMPLEMENTATION - how to use template <result_type>?
 public:
     Moments();
     Moments(int order, bool centered, double(*f)(double));

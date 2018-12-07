@@ -1,3 +1,4 @@
+#define WITHOUT_NUMPY
 #pragma once
 
 #include <vector>

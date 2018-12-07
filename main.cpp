@@ -9,6 +9,7 @@
 #include "Exception.hpp"
 #include "Moments.hpp"
 #include "matplotlibcpp.h"
+#include "Expectation.hpp"
 
 double my_func(double x1, double x2) {
     return x1 + pow(x2,2) - 3*x2;
@@ -17,7 +18,6 @@ double my_func(double x1, double x2) {
 double another_func(std::vector<double>& random_vec) {
     return random_vec[0] + random_vec[1]*2;
 }
-
 double call_my_func(double (*f)(std::vector<double>&), std::vector<double> arg){
     return f(arg);
 }
@@ -36,7 +36,6 @@ int main() {
     }
 
 
-
     std::default_random_engine generator;
     std::exponential_distribution<double> distribution(-0.5);
 
@@ -53,6 +52,15 @@ int main() {
 
     std::cout << my_exp.get_lambda() << std::endl;
 
+    std::cout<<"\n";
+    Normal pp;
+    Expectation cal_exp;
+    double mean;
+    mean=cal_exp.cal_sample_variance(pp.generate(1000));
+    std::cout<<mean<<"\n";
+    Moments solver;
+
+    /*
     int n = 5000;
     std::vector<double> x(n), y(n), z(n), w(n,2);
     for (int i = 0; i < n; i++) {
@@ -73,6 +81,6 @@ int main() {
     std::vector<double> k = my_other_exp.generate(1000);
     plt::hist(k);
     plt::show();
-
+*/
     return 0;
 }

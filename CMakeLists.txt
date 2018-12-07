@@ -5,7 +5,11 @@ cmake_policy(VERSION 3.3)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(monte_carlo main.cpp Exception.hpp Distribution.hpp Distribution.cpp Uniform.cpp Uniform.hpp Normal.cpp Normal.hpp Exponential.cpp Exponential.hpp Geometric.cpp Geometric.hpp Exception.hpp Moments.cpp Moments.hpp VerifyCLT.cpp VerifyCLT.hpp)
+add_executable(monte_carlo main.cpp Exception.hpp
+        Distribution.hpp Distribution.cpp Uniform.cpp Uniform.hpp
+        Normal.cpp Normal.hpp Exponential.cpp Exponential.hpp
+        Geometric.cpp Geometric.hpp Exception.hpp Moments.cpp Moments.hpp
+        VerifyCLT.cpp VerifyCLT.hpp Expectation.cpp Expectation.hpp)
 
 ################################################################
 # Matplotlib-cpp
