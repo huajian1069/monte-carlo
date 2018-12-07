@@ -24,6 +24,14 @@ double Uniform::get_b() {
     return b;
 }
 
+double Uniform::mean() {
+    return (a+b)/2;
+}
+
+double Uniform::std_dev() {
+    return (b-a)/sqrt(12);
+}
+
 double Uniform::generate() {
     std::mt19937 generator(std::chrono::system_clock::now().time_since_epoch().count());
     std::uniform_real_distribution<double> distribution(a,b);

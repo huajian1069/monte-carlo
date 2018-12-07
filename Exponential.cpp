@@ -23,6 +23,14 @@ double Exponential::get_lambda() {
     return lambda;
 }
 
+double Exponential::mean() {
+    return 1/lambda;
+}
+
+double Exponential::std_dev() {
+    return 1/lambda;
+}
+
 double Exponential::generate() {
     double U = uniform.generate();
     return -1.0 * log(U) / lambda;

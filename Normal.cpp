@@ -22,11 +22,11 @@ Normal::Normal(double mean, double std) {
      sigma = std;
 }
 
-double Normal::get_mu() {
+double Normal::mean() {
     return mu;
 }
 
-double Normal::get_sigma() {
+double Normal::std_dev() {
     return sigma;
 }
 
