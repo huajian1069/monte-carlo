@@ -23,7 +23,7 @@ public:
     double mean() override; //!< Returns mean of the uniform distribution
     double std_dev() override; //!< Returns standard deviation of uniform distribution
     double generate() override; //!< Generate one uniform random variable
-    std::vector<double> generate(int n) override; //!< Generate n uniform random variables
+    std::vector<double> generate(unsigned int n) override; //!< Generate n uniform random variables
 };
 
 

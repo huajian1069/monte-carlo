@@ -1,0 +1,6 @@
+<map id="Distribution" name="Distribution">
+<area shape="rect" id="node2" href="$classExponential.html" title="Exponential" alt="" coords="5,80,96,107"/>
+<area shape="rect" id="node3" href="$classGeometric.html" title="Geometric" alt="" coords="120,80,203,107"/>
+<area shape="rect" id="node4" href="$classNormal.html" title="Normal" alt="" coords="227,80,291,107"/>
+<area shape="rect" id="node5" href="$classUniform.html" title="Uniform" alt="" coords="315,80,383,107"/>
+</map>

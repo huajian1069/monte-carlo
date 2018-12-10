@@ -1,15 +1,8 @@
 var searchData=
 [
-  ['select_5fnpy_5ftype',['select_npy_type',['../structmatplotlibcpp_1_1select__npy__type.html',1,'matplotlibcpp']]],
-  ['select_5fnpy_5ftype_3c_20bool_20_3e',['select_npy_type&lt; bool &gt;',['../structmatplotlibcpp_1_1select__npy__type_3_01bool_01_4.html',1,'matplotlibcpp']]],
-  ['select_5fnpy_5ftype_3c_20double_20_3e',['select_npy_type&lt; double &gt;',['../structmatplotlibcpp_1_1select__npy__type_3_01double_01_4.html',1,'matplotlibcpp']]],
-  ['select_5fnpy_5ftype_3c_20float_20_3e',['select_npy_type&lt; float &gt;',['../structmatplotlibcpp_1_1select__npy__type_3_01float_01_4.html',1,'matplotlibcpp']]],
-  ['select_5fnpy_5ftype_3c_20int16_5ft_20_3e',['select_npy_type&lt; int16_t &gt;',['../structmatplotlibcpp_1_1select__npy__type_3_01int16__t_01_4.html',1,'matplotlibcpp']]],
-  ['select_5fnpy_5ftype_3c_20int32_5ft_20_3e',['select_npy_type&lt; int32_t &gt;',['../structmatplotlibcpp_1_1select__npy__type_3_01int32__t_01_4.html',1,'matplotlibcpp']]],
-  ['select_5fnpy_5ftype_3c_20int64_5ft_20_3e',['select_npy_type&lt; int64_t &gt;',['../structmatplotlibcpp_1_1select__npy__type_3_01int64__t_01_4.html',1,'matplotlibcpp']]],
-  ['select_5fnpy_5ftype_3c_20int8_5ft_20_3e',['select_npy_type&lt; int8_t &gt;',['../structmatplotlibcpp_1_1select__npy__type_3_01int8__t_01_4.html',1,'matplotlibcpp']]],
-  ['select_5fnpy_5ftype_3c_20uint16_5ft_20_3e',['select_npy_type&lt; uint16_t &gt;',['../structmatplotlibcpp_1_1select__npy__type_3_01uint16__t_01_4.html',1,'matplotlibcpp']]],
-  ['select_5fnpy_5ftype_3c_20uint32_5ft_20_3e',['select_npy_type&lt; uint32_t &gt;',['../structmatplotlibcpp_1_1select__npy__type_3_01uint32__t_01_4.html',1,'matplotlibcpp']]],
-  ['select_5fnpy_5ftype_3c_20uint64_5ft_20_3e',['select_npy_type&lt; uint64_t &gt;',['../structmatplotlibcpp_1_1select__npy__type_3_01uint64__t_01_4.html',1,'matplotlibcpp']]],
-  ['select_5fnpy_5ftype_3c_20uint8_5ft_20_3e',['select_npy_type&lt; uint8_t &gt;',['../structmatplotlibcpp_1_1select__npy__type_3_01uint8__t_01_4.html',1,'matplotlibcpp']]]
+  ['is_5fboost_5ftuple',['is_boost_tuple',['../structgnuplotio_1_1is__boost__tuple.html',1,'gnuplotio']]],
+  ['is_5fboost_5ftuple_5fnulltype',['is_boost_tuple_nulltype',['../structgnuplotio_1_1is__boost__tuple__nulltype.html',1,'gnuplotio']]],
+  ['is_5fboost_5ftuple_5fnulltype_3c_20boost_3a_3atuples_3a_3anull_5ftype_20_3e',['is_boost_tuple_nulltype&lt; boost::tuples::null_type &gt;',['../structgnuplotio_1_1is__boost__tuple__nulltype_3_01boost_1_1tuples_1_1null__type_01_4.html',1,'gnuplotio']]],
+  ['is_5flike_5fstl_5fcontainer',['is_like_stl_container',['../structgnuplotio_1_1is__like__stl__container.html',1,'gnuplotio']]],
+  ['iteratorrange',['IteratorRange',['../classgnuplotio_1_1IteratorRange.html',1,'gnuplotio']]]
 ];

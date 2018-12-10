@@ -13,7 +13,7 @@
 class Distribution {
 public:
     virtual double generate() = 0; //!< Purely virtual generator of one random variable
-    virtual std::vector<double> generate(int n) = 0; //!< Purely virtual generator of n random  variables
+    virtual std::vector<double> generate(unsigned int n) = 0; //!< Purely virtual generator of n random  variables
     virtual double mean() = 0; //!< Returns mean of distribution
     virtual double std_dev() = 0; //!< Returns standard deviation of distribution
 };

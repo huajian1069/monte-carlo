@@ -12,8 +12,8 @@ Geometric::Geometric() {
 }
 
 Geometric::Geometric(double p) {
-    if (p > 1 || p < 0) {
-        throw Exception("Probability parameter of the geomtric distribution must be between 0 and 1.");
+    if (p >= 1 || p <= 0) {
+        throw Exception("Probability parameter of the geometric distribution must be between 0 and 1.");
     }
     uniform = Uniform();
     probability = p;
@@ -36,9 +36,8 @@ double Geometric::generate() {
     return int(floor(log(U)/log(1-probability)));
 }
 
-std::vector<double> Geometric::generate(int n) {
-    std::vector<double> input = uniform.generate(n);
-    std::vector<double> output(n);
+std::vector<double> Geometric::generate(unsigned int n) {
+    std::vector<double> output = uniform.generate(n);
     auto it = output.begin();
     auto end = output.end();
     for (; it != end; ++it) {

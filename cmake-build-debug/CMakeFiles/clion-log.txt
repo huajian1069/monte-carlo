@@ -1,4 +1,10 @@
-/home/huajian/Downloads/clion-2018.2.3/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/huajian/monte-carlo
+/opt/clion-2018.2.3/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/pcsc/monte-carlo
+-- Boost version: 1.67.0
+-- Found the following Boost libraries:
+--   system
+--   filesystem
+--   iostreams
+--   regex
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/huajian/monte-carlo/cmake-build-debug
+-- Build files have been written to: /home/pcsc/monte-carlo/cmake-build-debug

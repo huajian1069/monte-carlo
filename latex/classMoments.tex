@@ -1,0 +1,48 @@
+\hypertarget{classMoments}{}\section{Moments Class Reference}
+\label{classMoments}\index{Moments@{Moments}}
+
+
+{\ttfamily \#include $<$Moments.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMoments_ab137d6fede152f8f6aeaf9178d6a7142}\label{classMoments_ab137d6fede152f8f6aeaf9178d6a7142}} 
+\hyperlink{classMoments_ab137d6fede152f8f6aeaf9178d6a7142}{Moments} (\hyperlink{classDistribution}{Distribution} $\ast$distribution)
+\begin{DoxyCompactList}\small\item\em Constructor taking a distribution. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMoments_a6830cc3cbed506217e9e98eb3cd194b0}\label{classMoments_a6830cc3cbed506217e9e98eb3cd194b0}} 
+\hyperlink{classMoments_a6830cc3cbed506217e9e98eb3cd194b0}{Moments} (unsigned int order, bool centered, double($\ast$f)(double), \hyperlink{classDistribution}{Distribution} $\ast$distribution)
+\begin{DoxyCompactList}\small\item\em Overloaded constructor initialising all members. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMoments_a18abc070029c3f4c986bddcafbd3345b}\label{classMoments_a18abc070029c3f4c986bddcafbd3345b}} 
+void \hyperlink{classMoments_a18abc070029c3f4c986bddcafbd3345b}{set\+\_\+p} (unsigned int order)
+\begin{DoxyCompactList}\small\item\em Set the order of the moment. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMoments_adba1c979477f015fa887a9123dbf5cee}\label{classMoments_adba1c979477f015fa887a9123dbf5cee}} 
+unsigned int \hyperlink{classMoments_adba1c979477f015fa887a9123dbf5cee}{get\+\_\+p} ()
+\begin{DoxyCompactList}\small\item\em Get the order of the moment. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMoments_ac5549fdcf86889e7cfc7527801279486}\label{classMoments_ac5549fdcf86889e7cfc7527801279486}} 
+void \hyperlink{classMoments_ac5549fdcf86889e7cfc7527801279486}{set\+\_\+central} (bool centered)
+\begin{DoxyCompactList}\small\item\em Set whether the moment is central or not. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMoments_a26d12173d77025d2542765d317df3f13}\label{classMoments_a26d12173d77025d2542765d317df3f13}} 
+bool \hyperlink{classMoments_a26d12173d77025d2542765d317df3f13}{get\+\_\+central} ()
+\begin{DoxyCompactList}\small\item\em Get whether the moment is central or not. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMoments_a52c7c94bb813177b284026917394b98c}\label{classMoments_a52c7c94bb813177b284026917394b98c}} 
+void \hyperlink{classMoments_a52c7c94bb813177b284026917394b98c}{set\+\_\+function} (double($\ast$f)(double))
+\begin{DoxyCompactList}\small\item\em Set the user defined function. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMoments_a93de7ec3d78a17b2de38311250b7ecb8}\label{classMoments_a93de7ec3d78a17b2de38311250b7ecb8}} 
+double \hyperlink{classMoments_a93de7ec3d78a17b2de38311250b7ecb8}{calculate} (unsigned int sample\+\_\+size)
+\begin{DoxyCompactList}\small\item\em Calculate the moment of a certain sample size. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMoments_aef8bc3f964aa46728ef3ee8f2fcbc2e2}\label{classMoments_aef8bc3f964aa46728ef3ee8f2fcbc2e2}} 
+double \hyperlink{classMoments_aef8bc3f964aa46728ef3ee8f2fcbc2e2}{calculate} (std\+::vector$<$ double $>$ random\+\_\+vector)
+\begin{DoxyCompactList}\small\item\em Calculate the moment of a random vector. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMoments_a71aba384537c7811da1183956e1299df}\label{classMoments_a71aba384537c7811da1183956e1299df}} 
+void \hyperlink{classMoments_a71aba384537c7811da1183956e1299df}{visualise\+\_\+monte\+\_\+carlo} (std\+::vector$<$ unsigned int $>$ my\+\_\+n\+\_\+values)
+\begin{DoxyCompactList}\small\item\em Visualise the Monte Carlo approximations to the moment over a number of sample values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is a class of moments of user defined functions. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Moments.\+hpp\item 
+Moments.\+cpp\end{DoxyCompactItemize}

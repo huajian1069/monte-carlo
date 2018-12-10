@@ -39,38 +39,27 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/huajian/Downloads/clion-2018.2.3/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /opt/clion-2018.2.3/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/huajian/Downloads/clion-2018.2.3/bin/cmake/linux/bin/cmake -E remove -f
+RM = /opt/clion-2018.2.3/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/huajian/monte-carlo
+CMAKE_SOURCE_DIR = /home/pcsc/monte-carlo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/huajian/monte-carlo/cmake-build-debug
+CMAKE_BINARY_DIR = /home/pcsc/monte-carlo/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/huajian/Downloads/clion-2018.2.3/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/huajian/Downloads/clion-2018.2.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/opt/clion-2018.2.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,11 +67,33 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/opt/clion-2018.2.3/bin/cmake/linux/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/opt/clion-2018.2.3/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/huajian/monte-carlo/cmake-build-debug/CMakeFiles /home/huajian/monte-carlo/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pcsc/monte-carlo/cmake-build-debug/CMakeFiles /home/pcsc/monte-carlo/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/huajian/monte-carlo/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pcsc/monte-carlo/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -136,32 +147,31 @@ monte_carlo/fast:
 	$(MAKE) -f CMakeFiles/monte_carlo.dir/build.make CMakeFiles/monte_carlo.dir/build
 .PHONY : monte_carlo/fast
 
-Distribution.o: Distribution.cpp.o
+#=============================================================================
+# Target rules for targets named monaco
 
-.PHONY : Distribution.o
+# Build rule for target.
+monaco: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 monaco
+.PHONY : monaco
 
-# target to build an object file
-Distribution.cpp.o:
-	$(MAKE) -f CMakeFiles/monte_carlo.dir/build.make CMakeFiles/monte_carlo.dir/Distribution.cpp.o
-.PHONY : Distribution.cpp.o
+# fast build rule for target.
+monaco/fast:
+	$(MAKE) -f CMakeFiles/monaco.dir/build.make CMakeFiles/monaco.dir/build
+.PHONY : monaco/fast
 
-Distribution.i: Distribution.cpp.i
+#=============================================================================
+# Target rules for targets named test_my_distribution
 
-.PHONY : Distribution.i
+# Build rule for target.
+test_my_distribution: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_my_distribution
+.PHONY : test_my_distribution
 
-# target to preprocess a source file
-Distribution.cpp.i:
-	$(MAKE) -f CMakeFiles/monte_carlo.dir/build.make CMakeFiles/monte_carlo.dir/Distribution.cpp.i
-.PHONY : Distribution.cpp.i
-
-Distribution.s: Distribution.cpp.s
-
-.PHONY : Distribution.s
-
-# target to generate assembly for a file
-Distribution.cpp.s:
-	$(MAKE) -f CMakeFiles/monte_carlo.dir/build.make CMakeFiles/monte_carlo.dir/Distribution.cpp.s
-.PHONY : Distribution.cpp.s
+# fast build rule for target.
+test_my_distribution/fast:
+	$(MAKE) -f CMakeFiles/test_my_distribution.dir/build.make CMakeFiles/test_my_distribution.dir/build
+.PHONY : test_my_distribution/fast
 
 Expectation.o: Expectation.cpp.o
 
@@ -170,6 +180,7 @@ Expectation.o: Expectation.cpp.o
 # target to build an object file
 Expectation.cpp.o:
 	$(MAKE) -f CMakeFiles/monte_carlo.dir/build.make CMakeFiles/monte_carlo.dir/Expectation.cpp.o
+	$(MAKE) -f CMakeFiles/monaco.dir/build.make CMakeFiles/monaco.dir/Expectation.cpp.o
 .PHONY : Expectation.cpp.o
 
 Expectation.i: Expectation.cpp.i
@@ -179,6 +190,7 @@ Expectation.i: Expectation.cpp.i
 # target to preprocess a source file
 Expectation.cpp.i:
 	$(MAKE) -f CMakeFiles/monte_carlo.dir/build.make CMakeFiles/monte_carlo.dir/Expectation.cpp.i
+	$(MAKE) -f CMakeFiles/monaco.dir/build.make CMakeFiles/monaco.dir/Expectation.cpp.i
 .PHONY : Expectation.cpp.i
 
 Expectation.s: Expectation.cpp.s
@@ -188,6 +200,7 @@ Expectation.s: Expectation.cpp.s
 # target to generate assembly for a file
 Expectation.cpp.s:
 	$(MAKE) -f CMakeFiles/monte_carlo.dir/build.make CMakeFiles/monte_carlo.dir/Expectation.cpp.s
+	$(MAKE) -f CMakeFiles/monaco.dir/build.make CMakeFiles/monaco.dir/Expectation.cpp.s
 .PHONY : Expectation.cpp.s
 
 Exponential.o: Exponential.cpp.o
@@ -197,6 +210,7 @@ Exponential.o: Exponential.cpp.o
 # target to build an object file
 Exponential.cpp.o:
 	$(MAKE) -f CMakeFiles/monte_carlo.dir/build.make CMakeFiles/monte_carlo.dir/Exponential.cpp.o
+	$(MAKE) -f CMakeFiles/monaco.dir/build.make CMakeFiles/monaco.dir/Exponential.cpp.o
 .PHONY : Exponential.cpp.o
 
 Exponential.i: Exponential.cpp.i
@@ -206,6 +220,7 @@ Exponential.i: Exponential.cpp.i
 # target to preprocess a source file
 Exponential.cpp.i:
 	$(MAKE) -f CMakeFiles/monte_carlo.dir/build.make CMakeFiles/monte_carlo.dir/Exponential.cpp.i
+	$(MAKE) -f CMakeFiles/monaco.dir/build.make CMakeFiles/monaco.dir/Exponential.cpp.i
 .PHONY : Exponential.cpp.i
 
 Exponential.s: Exponential.cpp.s
@@ -215,6 +230,7 @@ Exponential.s: Exponential.cpp.s
 # target to generate assembly for a file
 Exponential.cpp.s:
 	$(MAKE) -f CMakeFiles/monte_carlo.dir/build.make CMakeFiles/monte_carlo.dir/Exponential.cpp.s
+	$(MAKE) -f CMakeFiles/monaco.dir/build.make CMakeFiles/monaco.dir/Exponential.cpp.s
 .PHONY : Exponential.cpp.s
 
 Geometric.o: Geometric.cpp.o
@@ -224,6 +240,7 @@ Geometric.o: Geometric.cpp.o
 # target to build an object file
 Geometric.cpp.o:
 	$(MAKE) -f CMakeFiles/monte_carlo.dir/build.make CMakeFiles/monte_carlo.dir/Geometric.cpp.o
+	$(MAKE) -f CMakeFiles/monaco.dir/build.make CMakeFiles/monaco.dir/Geometric.cpp.o
 .PHONY : Geometric.cpp.o
 
 Geometric.i: Geometric.cpp.i
@@ -233,6 +250,7 @@ Geometric.i: Geometric.cpp.i
 # target to preprocess a source file
 Geometric.cpp.i:
 	$(MAKE) -f CMakeFiles/monte_carlo.dir/build.make CMakeFiles/monte_carlo.dir/Geometric.cpp.i
+	$(MAKE) -f CMakeFiles/monaco.dir/build.make CMakeFiles/monaco.dir/Geometric.cpp.i
 .PHONY : Geometric.cpp.i
 
 Geometric.s: Geometric.cpp.s
@@ -242,6 +260,7 @@ Geometric.s: Geometric.cpp.s
 # target to generate assembly for a file
 Geometric.cpp.s:
 	$(MAKE) -f CMakeFiles/monte_carlo.dir/build.make CMakeFiles/monte_carlo.dir/Geometric.cpp.s
+	$(MAKE) -f CMakeFiles/monaco.dir/build.make CMakeFiles/monaco.dir/Geometric.cpp.s
 .PHONY : Geometric.cpp.s
 
 Moments.o: Moments.cpp.o
@@ -251,6 +270,7 @@ Moments.o: Moments.cpp.o
 # target to build an object file
 Moments.cpp.o:
 	$(MAKE) -f CMakeFiles/monte_carlo.dir/build.make CMakeFiles/monte_carlo.dir/Moments.cpp.o
+	$(MAKE) -f CMakeFiles/monaco.dir/build.make CMakeFiles/monaco.dir/Moments.cpp.o
 .PHONY : Moments.cpp.o
 
 Moments.i: Moments.cpp.i
@@ -260,6 +280,7 @@ Moments.i: Moments.cpp.i
 # target to preprocess a source file
 Moments.cpp.i:
 	$(MAKE) -f CMakeFiles/monte_carlo.dir/build.make CMakeFiles/monte_carlo.dir/Moments.cpp.i
+	$(MAKE) -f CMakeFiles/monaco.dir/build.make CMakeFiles/monaco.dir/Moments.cpp.i
 .PHONY : Moments.cpp.i
 
 Moments.s: Moments.cpp.s
@@ -269,6 +290,7 @@ Moments.s: Moments.cpp.s
 # target to generate assembly for a file
 Moments.cpp.s:
 	$(MAKE) -f CMakeFiles/monte_carlo.dir/build.make CMakeFiles/monte_carlo.dir/Moments.cpp.s
+	$(MAKE) -f CMakeFiles/monaco.dir/build.make CMakeFiles/monaco.dir/Moments.cpp.s
 .PHONY : Moments.cpp.s
 
 Normal.o: Normal.cpp.o
@@ -278,6 +300,7 @@ Normal.o: Normal.cpp.o
 # target to build an object file
 Normal.cpp.o:
 	$(MAKE) -f CMakeFiles/monte_carlo.dir/build.make CMakeFiles/monte_carlo.dir/Normal.cpp.o
+	$(MAKE) -f CMakeFiles/monaco.dir/build.make CMakeFiles/monaco.dir/Normal.cpp.o
 .PHONY : Normal.cpp.o
 
 Normal.i: Normal.cpp.i
@@ -287,6 +310,7 @@ Normal.i: Normal.cpp.i
 # target to preprocess a source file
 Normal.cpp.i:
 	$(MAKE) -f CMakeFiles/monte_carlo.dir/build.make CMakeFiles/monte_carlo.dir/Normal.cpp.i
+	$(MAKE) -f CMakeFiles/monaco.dir/build.make CMakeFiles/monaco.dir/Normal.cpp.i
 .PHONY : Normal.cpp.i
 
 Normal.s: Normal.cpp.s
@@ -296,6 +320,7 @@ Normal.s: Normal.cpp.s
 # target to generate assembly for a file
 Normal.cpp.s:
 	$(MAKE) -f CMakeFiles/monte_carlo.dir/build.make CMakeFiles/monte_carlo.dir/Normal.cpp.s
+	$(MAKE) -f CMakeFiles/monaco.dir/build.make CMakeFiles/monaco.dir/Normal.cpp.s
 .PHONY : Normal.cpp.s
 
 Uniform.o: Uniform.cpp.o
@@ -305,6 +330,7 @@ Uniform.o: Uniform.cpp.o
 # target to build an object file
 Uniform.cpp.o:
 	$(MAKE) -f CMakeFiles/monte_carlo.dir/build.make CMakeFiles/monte_carlo.dir/Uniform.cpp.o
+	$(MAKE) -f CMakeFiles/monaco.dir/build.make CMakeFiles/monaco.dir/Uniform.cpp.o
 .PHONY : Uniform.cpp.o
 
 Uniform.i: Uniform.cpp.i
@@ -314,6 +340,7 @@ Uniform.i: Uniform.cpp.i
 # target to preprocess a source file
 Uniform.cpp.i:
 	$(MAKE) -f CMakeFiles/monte_carlo.dir/build.make CMakeFiles/monte_carlo.dir/Uniform.cpp.i
+	$(MAKE) -f CMakeFiles/monaco.dir/build.make CMakeFiles/monaco.dir/Uniform.cpp.i
 .PHONY : Uniform.cpp.i
 
 Uniform.s: Uniform.cpp.s
@@ -323,6 +350,7 @@ Uniform.s: Uniform.cpp.s
 # target to generate assembly for a file
 Uniform.cpp.s:
 	$(MAKE) -f CMakeFiles/monte_carlo.dir/build.make CMakeFiles/monte_carlo.dir/Uniform.cpp.s
+	$(MAKE) -f CMakeFiles/monaco.dir/build.make CMakeFiles/monaco.dir/Uniform.cpp.s
 .PHONY : Uniform.cpp.s
 
 VerifyCLT.o: VerifyCLT.cpp.o
@@ -332,6 +360,7 @@ VerifyCLT.o: VerifyCLT.cpp.o
 # target to build an object file
 VerifyCLT.cpp.o:
 	$(MAKE) -f CMakeFiles/monte_carlo.dir/build.make CMakeFiles/monte_carlo.dir/VerifyCLT.cpp.o
+	$(MAKE) -f CMakeFiles/monaco.dir/build.make CMakeFiles/monaco.dir/VerifyCLT.cpp.o
 .PHONY : VerifyCLT.cpp.o
 
 VerifyCLT.i: VerifyCLT.cpp.i
@@ -341,6 +370,7 @@ VerifyCLT.i: VerifyCLT.cpp.i
 # target to preprocess a source file
 VerifyCLT.cpp.i:
 	$(MAKE) -f CMakeFiles/monte_carlo.dir/build.make CMakeFiles/monte_carlo.dir/VerifyCLT.cpp.i
+	$(MAKE) -f CMakeFiles/monaco.dir/build.make CMakeFiles/monaco.dir/VerifyCLT.cpp.i
 .PHONY : VerifyCLT.cpp.i
 
 VerifyCLT.s: VerifyCLT.cpp.s
@@ -350,6 +380,7 @@ VerifyCLT.s: VerifyCLT.cpp.s
 # target to generate assembly for a file
 VerifyCLT.cpp.s:
 	$(MAKE) -f CMakeFiles/monte_carlo.dir/build.make CMakeFiles/monte_carlo.dir/VerifyCLT.cpp.s
+	$(MAKE) -f CMakeFiles/monaco.dir/build.make CMakeFiles/monaco.dir/VerifyCLT.cpp.s
 .PHONY : VerifyCLT.cpp.s
 
 main.o: main.cpp.o
@@ -379,19 +410,46 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/monte_carlo.dir/build.make CMakeFiles/monte_carlo.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+my_distribution_test.o: my_distribution_test.cpp.o
+
+.PHONY : my_distribution_test.o
+
+# target to build an object file
+my_distribution_test.cpp.o:
+	$(MAKE) -f CMakeFiles/test_my_distribution.dir/build.make CMakeFiles/test_my_distribution.dir/my_distribution_test.cpp.o
+.PHONY : my_distribution_test.cpp.o
+
+my_distribution_test.i: my_distribution_test.cpp.i
+
+.PHONY : my_distribution_test.i
+
+# target to preprocess a source file
+my_distribution_test.cpp.i:
+	$(MAKE) -f CMakeFiles/test_my_distribution.dir/build.make CMakeFiles/test_my_distribution.dir/my_distribution_test.cpp.i
+.PHONY : my_distribution_test.cpp.i
+
+my_distribution_test.s: my_distribution_test.cpp.s
+
+.PHONY : my_distribution_test.s
+
+# target to generate assembly for a file
+my_distribution_test.cpp.s:
+	$(MAKE) -f CMakeFiles/test_my_distribution.dir/build.make CMakeFiles/test_my_distribution.dir/my_distribution_test.cpp.s
+.PHONY : my_distribution_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... test"
+	@echo "... rebuild_cache"
 	@echo "... doxygen"
 	@echo "... monte_carlo"
-	@echo "... Distribution.o"
-	@echo "... Distribution.i"
-	@echo "... Distribution.s"
+	@echo "... monaco"
+	@echo "... test_my_distribution"
 	@echo "... Expectation.o"
 	@echo "... Expectation.i"
 	@echo "... Expectation.s"
@@ -416,6 +474,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... my_distribution_test.o"
+	@echo "... my_distribution_test.i"
+	@echo "... my_distribution_test.s"
 .PHONY : help
 
 

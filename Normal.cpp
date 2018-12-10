@@ -14,7 +14,7 @@ Normal::Normal() {
 }
 
 Normal::Normal(double mean, double std) {
-    if (std < 0) {
+    if (std <= 0) {
         throw Exception("Standard deviation must be strictly positive.");
     }
      uniform = Uniform();
@@ -36,7 +36,7 @@ double Normal::generate() {
     return mu + sigma*sqrt(-2*log(U1))*cos(2*M_PI*U2);
 }
 
-std::vector<double> Normal::generate(int n) {
+std::vector<double> Normal::generate(unsigned int n) {
     std::vector<double> output = uniform.generate(n);
     // If n is odd, increase by 1 to give an even number of samples
     if (n % 2 != 0) {

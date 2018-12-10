@@ -8,26 +8,27 @@
 
 #include <vector>
 #include "Distribution.hpp"
-#include "matplotlibcpp.h"
 
+/**
+ * This is a class of moments of user defined functions.
+ */
 class Moments {
 private:
-    int p;
-    bool central;
-    double (*user_defined_function)(double);
-    Distribution* distribution; // CHECK THIS IMPLEMENTATION - how to use template <result_type>?
+    unsigned int p; //!< The order of the moment (e.g. p-th moment)
+    bool central; //!< Whether the moment is central or not
+    double (*user_defined_function)(double); //!< User defined function
+    Distribution* distribution; //!< Underlying distribution of the random variables
 public:
-    Moments();
-    Moments(int order, bool centered, double(*f)(double), Distribution *distribution);
-    void set_p(int order);
-    int get_p();
-    void set_central(bool centered);
-    bool get_central();
-    void set_function(double (*f)(double));
-    double calculate(int sample_size);
-    double calculate(std::vector<double> random_vector);
-
-    double visualise_monte_carlo(std::vector<int> my_n_values);
+    Moments(Distribution* distribution); //!< Constructor taking a distribution
+    Moments(unsigned int order, bool centered, double(*f)(double), Distribution* distribution); //!< Overloaded constructor initialising all members
+    void set_p(unsigned int order); //!< Set the order of the moment
+    unsigned int get_p(); //!< Get the order of the moment
+    void set_central(bool centered); //!< Set whether the moment is central or not
+    bool get_central(); //!< Get whether the moment is central or not
+    void set_function(double (*f)(double)); //!< Set the user defined function
+    double calculate(unsigned int sample_size); //!< Calculate the moment of a certain sample size
+    double calculate(std::vector<double> random_vector); //!< Calculate the moment of a random vector
+    void visualise_monte_carlo(std::vector<unsigned int> my_n_values); //!< Visualise the Monte Carlo approximations to the moment over a number of sample values
 };
 
 

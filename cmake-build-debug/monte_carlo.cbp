@@ -8,155 +8,263 @@
 		<Option virtualFolders="CMake Files\;CMake Files\cmake-build-debug\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/huajian/monte-carlo/cmake-build-debug"/>
+				<Option working_dir="/home/pcsc/monte-carlo/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/huajian/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/huajian/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/huajian/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/huajian/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/home/huajian/monte-carlo/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/huajian/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/huajian/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/huajian/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/huajian/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/huajian/monte-carlo/cmake-build-debug"/>
+				<Option working_dir="/home/pcsc/monte-carlo/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/huajian/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/huajian/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/huajian/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/huajian/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test">
+				<Option working_dir="/home/pcsc/monte-carlo/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/pcsc/monte-carlo/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="doxygen">
-				<Option working_dir="/home/huajian/monte-carlo/cmake-build-debug"/>
+				<Option working_dir="/home/pcsc/monte-carlo/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/huajian/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 doxygen"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/huajian/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/huajian/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/huajian/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 doxygen"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="monte_carlo">
-				<Option output="/home/huajian/monte-carlo/cmake-build-debug/======monte_carlo" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/huajian/monte-carlo/cmake-build-debug"/>
+				<Option output="/home/pcsc/monte-carlo/cmake-build-debug/monte_carlo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/pcsc/monte-carlo/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/python2.7"/>
-					<Add directory="/usr/include/c++/5"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
-					<Add directory="/usr/include/c++/5/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/huajian/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 monte_carlo"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/huajian/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/huajian/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/huajian/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 monte_carlo"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="monte_carlo/fast">
-				<Option output="/home/huajian/monte-carlo/cmake-build-debug/======monte_carlo" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/huajian/monte-carlo/cmake-build-debug"/>
+				<Option output="/home/pcsc/monte-carlo/cmake-build-debug/monte_carlo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/pcsc/monte-carlo/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/python2.7"/>
-					<Add directory="/usr/include/c++/5"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
-					<Add directory="/usr/include/c++/5/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/huajian/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 monte_carlo/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/huajian/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/huajian/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/huajian/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 monte_carlo/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="monaco">
+				<Option output="/home/pcsc/monte-carlo/cmake-build-debug/libmonaco.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/pcsc/monte-carlo/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 monaco"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="monaco/fast">
+				<Option output="/home/pcsc/monte-carlo/cmake-build-debug/libmonaco.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/pcsc/monte-carlo/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 monaco/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_my_distribution">
+				<Option output="/home/pcsc/monte-carlo/cmake-build-debug/test_my_distribution" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/pcsc/monte-carlo/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_my_distribution"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_my_distribution/fast">
+				<Option output="/home/pcsc/monte-carlo/cmake-build-debug/test_my_distribution" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/pcsc/monte-carlo/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_my_distribution/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/pcsc/monte-carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/huajian/monte-carlo/Distribution.cpp">
+		<Unit filename="/home/pcsc/monte-carlo/Expectation.cpp">
+			<Option target="monte_carlo"/>
+			<Option target="monaco"/>
+		</Unit>
+		<Unit filename="/home/pcsc/monte-carlo/Expectation.hpp">
+			<Option target="monte_carlo"/>
+			<Option target="monaco"/>
+		</Unit>
+		<Unit filename="/home/pcsc/monte-carlo/Exponential.cpp">
+			<Option target="monte_carlo"/>
+			<Option target="monaco"/>
+		</Unit>
+		<Unit filename="/home/pcsc/monte-carlo/Exponential.hpp">
+			<Option target="monte_carlo"/>
+			<Option target="monaco"/>
+		</Unit>
+		<Unit filename="/home/pcsc/monte-carlo/Geometric.cpp">
+			<Option target="monte_carlo"/>
+			<Option target="monaco"/>
+		</Unit>
+		<Unit filename="/home/pcsc/monte-carlo/Geometric.hpp">
+			<Option target="monte_carlo"/>
+			<Option target="monaco"/>
+		</Unit>
+		<Unit filename="/home/pcsc/monte-carlo/Moments.cpp">
+			<Option target="monte_carlo"/>
+			<Option target="monaco"/>
+		</Unit>
+		<Unit filename="/home/pcsc/monte-carlo/Moments.hpp">
+			<Option target="monte_carlo"/>
+			<Option target="monaco"/>
+		</Unit>
+		<Unit filename="/home/pcsc/monte-carlo/Normal.cpp">
+			<Option target="monte_carlo"/>
+			<Option target="monaco"/>
+		</Unit>
+		<Unit filename="/home/pcsc/monte-carlo/Normal.hpp">
+			<Option target="monte_carlo"/>
+			<Option target="monaco"/>
+		</Unit>
+		<Unit filename="/home/pcsc/monte-carlo/Uniform.cpp">
+			<Option target="monte_carlo"/>
+			<Option target="monaco"/>
+		</Unit>
+		<Unit filename="/home/pcsc/monte-carlo/Uniform.hpp">
+			<Option target="monte_carlo"/>
+			<Option target="monaco"/>
+		</Unit>
+		<Unit filename="/home/pcsc/monte-carlo/VerifyCLT.cpp">
+			<Option target="monte_carlo"/>
+			<Option target="monaco"/>
+		</Unit>
+		<Unit filename="/home/pcsc/monte-carlo/VerifyCLT.hpp">
+			<Option target="monte_carlo"/>
+			<Option target="monaco"/>
+		</Unit>
+		<Unit filename="/home/pcsc/monte-carlo/main.cpp">
 			<Option target="monte_carlo"/>
 		</Unit>
-		<Unit filename="/home/huajian/monte-carlo/Distribution.hpp">
-			<Option target="monte_carlo"/>
+		<Unit filename="/home/pcsc/monte-carlo/my_distribution_test.cpp">
+			<Option target="test_my_distribution"/>
 		</Unit>
-		<Unit filename="/home/huajian/monte-carlo/Exception.hpp">
-			<Option target="monte_carlo"/>
-		</Unit>
-		<Unit filename="/home/huajian/monte-carlo/Expectation.cpp">
-			<Option target="monte_carlo"/>
-		</Unit>
-		<Unit filename="/home/huajian/monte-carlo/Expectation.hpp">
-			<Option target="monte_carlo"/>
-		</Unit>
-		<Unit filename="/home/huajian/monte-carlo/Exponential.cpp">
-			<Option target="monte_carlo"/>
-		</Unit>
-		<Unit filename="/home/huajian/monte-carlo/Exponential.hpp">
-			<Option target="monte_carlo"/>
-		</Unit>
-		<Unit filename="/home/huajian/monte-carlo/Geometric.cpp">
-			<Option target="monte_carlo"/>
-		</Unit>
-		<Unit filename="/home/huajian/monte-carlo/Geometric.hpp">
-			<Option target="monte_carlo"/>
-		</Unit>
-		<Unit filename="/home/huajian/monte-carlo/Moments.cpp">
-			<Option target="monte_carlo"/>
-		</Unit>
-		<Unit filename="/home/huajian/monte-carlo/Moments.hpp">
-			<Option target="monte_carlo"/>
-		</Unit>
-		<Unit filename="/home/huajian/monte-carlo/Normal.cpp">
-			<Option target="monte_carlo"/>
-		</Unit>
-		<Unit filename="/home/huajian/monte-carlo/Normal.hpp">
-			<Option target="monte_carlo"/>
-		</Unit>
-		<Unit filename="/home/huajian/monte-carlo/Uniform.cpp">
-			<Option target="monte_carlo"/>
-		</Unit>
-		<Unit filename="/home/huajian/monte-carlo/Uniform.hpp">
-			<Option target="monte_carlo"/>
-		</Unit>
-		<Unit filename="/home/huajian/monte-carlo/VerifyCLT.cpp">
-			<Option target="monte_carlo"/>
-		</Unit>
-		<Unit filename="/home/huajian/monte-carlo/VerifyCLT.hpp">
-			<Option target="monte_carlo"/>
-		</Unit>
-		<Unit filename="/home/huajian/monte-carlo/main.cpp">
-			<Option target="monte_carlo"/>
-		</Unit>
-		<Unit filename="/home/huajian/monte-carlo/CMakeLists.txt">
+		<Unit filename="/home/pcsc/monte-carlo/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/huajian/monte-carlo/cmake-build-debug/CMakeDoxyfile.in">
+		<Unit filename="/home/pcsc/monte-carlo/cmake-build-debug/CMakeDoxyfile.in">
 			<Option virtualFolder="CMake Files\cmake-build-debug\"/>
 		</Unit>
-		<Unit filename="/home/huajian/monte-carlo/cmake-build-debug/CMakeDoxygenDefaults.cmake">
+		<Unit filename="/home/pcsc/monte-carlo/cmake-build-debug/CMakeDoxygenDefaults.cmake">
 			<Option virtualFolder="CMake Files\cmake-build-debug\"/>
 		</Unit>
 	</Project>

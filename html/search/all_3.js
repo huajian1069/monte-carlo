@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['distribution',['Distribution',['../class_distribution.html',1,'']]],
-  ['distribution_3c_20double_20_3e',['Distribution&lt; double &gt;',['../class_distribution.html',1,'']]],
-  ['distribution_3c_20int_20_3e',['Distribution&lt; int &gt;',['../class_distribution.html',1,'']]]
+  ['distribution',['Distribution',['../classDistribution.html',1,'']]],
+  ['dont_5ftreat_5fas_5fstl_5fcontainer',['dont_treat_as_stl_container',['../structgnuplotio_1_1dont__treat__as__stl__container.html',1,'gnuplotio']]]
 ];

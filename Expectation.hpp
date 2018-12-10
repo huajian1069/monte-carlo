@@ -7,14 +7,18 @@
 
 #include <iostream>
 #include <vector>
+
+/**
+ * This is a class of expectations of a user defined function.
+ */
 class Expectation {
 private:
-    double (*user_defined_function)(double);
+    double (*user_defined_function)(double); //!< User defined function
 public:
-    Expectation();
-    Expectation(double (*func)(double));
-    double cal_expectation(std::vector<double>);
-    double cal_sample_variance(std::vector<double>);
+    Expectation(); //!< Default constructor
+    Expectation(double (*func)(double)); //!< Constructor with user defined function
+    double calculate_sample_mean(std::vector<double>); //!< Calculate sample mean
+    double calculate_sample_variance(std::vector<double>); //!< Calculate sample variance
 };
 
 

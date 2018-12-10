@@ -1,24 +1,21 @@
 var indexSectionsWithContent =
 {
-  0: "_abdeglmnpstuv",
-  1: "_degmnpsuv",
-  2: "egnu",
-  3: "ablmpstu"
+  0: "abcdefgimnpstuv",
+  1: "abcdefgimnptuv",
+  2: "cegmnsuv"
 };
 
 var indexSectionNames =
 {
   0: "all",
   1: "classes",
-  2: "functions",
-  3: "variables"
+  2: "functions"
 };
 
 var indexSectionLabels =
 {
   0: "All",
   1: "Classes",
-  2: "Functions",
-  3: "Variables"
+  2: "Functions"
 };
 

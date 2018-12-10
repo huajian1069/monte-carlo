@@ -20,7 +20,7 @@ public:
     double mean() override; //!< Returns mean of the exponential distribution
     double std_dev() override; //!< Returns standard deviation of the exponential distribution
     double generate() override; //!< Generates one exponential random variable
-    std::vector<double> generate(int n) override; //!< Generates n exponential random variables
+    std::vector<double> generate(unsigned int n) override; //!< Generates n exponential random variables
 };
 
 

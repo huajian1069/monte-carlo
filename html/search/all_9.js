@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['printer',['Printer',['../struct_printer.html',1,'']]],
-  ['probability',['probability',['../class_geometric.html#abb5f3ad35a83e34e4ea139af69f13fe8',1,'Geometric']]]
+  ['normal',['Normal',['../classNormal.html',1,'Normal'],['../classNormal.html#af62e51ec40dc2eedc3b9ca49ebdc7197',1,'Normal::Normal()'],['../classNormal.html#aa1c65330d29f9d34a3c35e01371a5a0c',1,'Normal::Normal(double mean, double std)']]]
 ];

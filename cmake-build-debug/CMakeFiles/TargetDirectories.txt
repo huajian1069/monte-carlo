@@ -1,4 +1,7 @@
-/home/huajian/monte-carlo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/huajian/monte-carlo/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/huajian/monte-carlo/cmake-build-debug/CMakeFiles/doxygen.dir
-/home/huajian/monte-carlo/cmake-build-debug/CMakeFiles/monte_carlo.dir
+/home/pcsc/monte-carlo/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/pcsc/monte-carlo/cmake-build-debug/CMakeFiles/test.dir
+/home/pcsc/monte-carlo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/pcsc/monte-carlo/cmake-build-debug/CMakeFiles/doxygen.dir
+/home/pcsc/monte-carlo/cmake-build-debug/CMakeFiles/monte_carlo.dir
+/home/pcsc/monte-carlo/cmake-build-debug/CMakeFiles/monaco.dir
+/home/pcsc/monte-carlo/cmake-build-debug/CMakeFiles/test_my_distribution.dir

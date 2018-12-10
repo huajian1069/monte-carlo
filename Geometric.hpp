@@ -11,7 +11,7 @@
  * It is defined as the number of failures before success so has support
  * {0, 1, 2, ... }
  */
-class Geometric : Distribution {
+class Geometric : public Distribution {
 private:
     Uniform uniform; //!< Uniform distribution used to generate normal random samples
     double probability; //!< Probability of success for each trial
@@ -22,7 +22,7 @@ public:
     double mean() override; //!< Returns mean of geometric distribution
     double std_dev() override; //!< Returns standard deviation of geometric distribution
     double generate() override; //!< Generates one geometric random variable
-    std::vector<double> generate(int n) override; //!< Generates n geometric random variables
+    std::vector<double> generate(unsigned int n) override; //!< Generates n geometric random variables
 };
 
 

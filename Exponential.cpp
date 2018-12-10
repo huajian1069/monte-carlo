@@ -12,7 +12,7 @@ Exponential::Exponential() {
 }
 
 Exponential::Exponential(double rate) {
-    if (rate < 0) {
+    if (rate <= 0) {
         throw Exception("Rate of the exponential distribution must be strictly positive.");
     }
     uniform = Uniform();
@@ -36,7 +36,7 @@ double Exponential::generate() {
     return -1.0 * log(U) / lambda;
 }
 
-std::vector<double> Exponential::generate(int n) {
+std::vector<double> Exponential::generate(unsigned int n) {
     std::vector<double> output = uniform.generate(n);
     auto it = output.begin();
     auto end = output.end();

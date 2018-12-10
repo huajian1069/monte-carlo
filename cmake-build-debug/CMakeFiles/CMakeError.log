@@ -1,20 +1,20 @@
 Determining if the pthread_create exist failed with the following output:
 Change Dir: /home/pcsc/monte-carlo/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_78266/fast"
-/usr/bin/make -f CMakeFiles/cmTC_78266.dir/build.make CMakeFiles/cmTC_78266.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_79d0e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_79d0e.dir/build.make CMakeFiles/cmTC_79d0e.dir/build
 make[1]: Entering directory '/home/pcsc/monte-carlo/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_78266.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_78266.dir/CheckSymbolExists.c.o   -c /home/pcsc/monte-carlo/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_78266
-/opt/clion-2018.2.3/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_78266.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_78266.dir/CheckSymbolExists.c.o  -o cmTC_78266 
-/usr/bin/ld: CMakeFiles/cmTC_78266.dir/CheckSymbolExists.c.o: in function `main':
+Building C object CMakeFiles/cmTC_79d0e.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_79d0e.dir/CheckSymbolExists.c.o   -c /home/pcsc/monte-carlo/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_79d0e
+/opt/clion-2018.2.3/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_79d0e.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_79d0e.dir/CheckSymbolExists.c.o  -o cmTC_79d0e 
+/usr/bin/ld: CMakeFiles/cmTC_79d0e.dir/CheckSymbolExists.c.o: in function `main':
 CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_78266.dir/build.make:87: cmTC_78266] Error 1
+make[1]: *** [CMakeFiles/cmTC_79d0e.dir/build.make:87: cmTC_79d0e] Error 1
 make[1]: Leaving directory '/home/pcsc/monte-carlo/cmake-build-debug/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_78266/fast] Error 2
+make: *** [Makefile:121: cmTC_79d0e/fast] Error 2
 
 File /home/pcsc/monte-carlo/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
@@ -34,18 +34,18 @@ int main(int argc, char** argv)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/pcsc/monte-carlo/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_27f4a/fast"
-/usr/bin/make -f CMakeFiles/cmTC_27f4a.dir/build.make CMakeFiles/cmTC_27f4a.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_039a2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_039a2.dir/build.make CMakeFiles/cmTC_039a2.dir/build
 make[1]: Entering directory '/home/pcsc/monte-carlo/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_27f4a.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_27f4a.dir/CheckFunctionExists.c.o   -c /opt/clion-2018.2.3/bin/cmake/linux/share/cmake-3.12/Modules/CheckFunctionExists.c
-Linking C executable cmTC_27f4a
-/opt/clion-2018.2.3/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_27f4a.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_27f4a.dir/CheckFunctionExists.c.o  -o cmTC_27f4a -lpthreads 
+Building C object CMakeFiles/cmTC_039a2.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_039a2.dir/CheckFunctionExists.c.o   -c /opt/clion-2018.2.3/bin/cmake/linux/share/cmake-3.12/Modules/CheckFunctionExists.c
+Linking C executable cmTC_039a2
+/opt/clion-2018.2.3/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_039a2.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_039a2.dir/CheckFunctionExists.c.o  -o cmTC_039a2 -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_27f4a.dir/build.make:87: cmTC_27f4a] Error 1
+make[1]: *** [CMakeFiles/cmTC_039a2.dir/build.make:87: cmTC_039a2] Error 1
 make[1]: Leaving directory '/home/pcsc/monte-carlo/cmake-build-debug/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_27f4a/fast] Error 2
+make: *** [Makefile:121: cmTC_039a2/fast] Error 2
 
 

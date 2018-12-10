@@ -3,6 +3,7 @@
 //
 
 #include "Uniform.hpp"
+#include "Exception.hpp"
 #include <chrono>
 #include <random>
 
@@ -12,6 +13,9 @@ Uniform::Uniform() {
 }
 
 Uniform::Uniform(double min, double max) {
+    if (min > max) {
+        throw Exception("The first argument must be strictly smaller than the second argument (minimum and maximum).");
+    }
     a = min;
     b = max;
 }
@@ -38,7 +42,7 @@ double Uniform::generate() {
     return distribution(generator);
 }
 
-std::vector<double> Uniform::generate(int n) {
+std::vector<double> Uniform::generate(unsigned int n) {
     std::mt19937 generator(std::chrono::system_clock::now().time_since_epoch().count());
     std::uniform_real_distribution<double> distribution(a,b);
     std::vector<double> output(n);

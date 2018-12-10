@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmonaco.a  CMakeFiles/monaco.dir/Uniform.cpp.o CMakeFiles/monaco.dir/Normal.cpp.o CMakeFiles/monaco.dir/Exponential.cpp.o CMakeFiles/monaco.dir/Geometric.cpp.o CMakeFiles/monaco.dir/Moments.cpp.o CMakeFiles/monaco.dir/Expectation.cpp.o CMakeFiles/monaco.dir/VerifyCLT.cpp.o
+/usr/bin/ranlib libmonaco.a

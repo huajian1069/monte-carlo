@@ -9,6 +9,7 @@
 
 /**
  * This is a class of one-dimensional normal (Gaussian) distributions.
+ * It has the mean and standard deviation as parameters (not variance)
  */
 
 class Normal : public Distribution {
@@ -22,7 +23,7 @@ public:
     double mean() override; //!< Returns mean
     double std_dev() override; //!< Returns standard deviation
     double generate() override; //!< Generate one normal random variable
-    std::vector<double> generate(int n) override; //!< Generate n normal random  variables
+    std::vector<double> generate(unsigned int n) override; //!< Generate n normal random  variables
 };
 
 #endif
