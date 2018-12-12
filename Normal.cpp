@@ -6,11 +6,13 @@
 #include "Uniform.hpp"
 #include "Exception.hpp"
 #include <cmath>
+#include <iostream>
 
 Normal::Normal() {
     uniform = Uniform();
     mu = 0.0;
     sigma = 1.0;
+//    std::cout << "Normal distribution initialised with mu = 0.0 and sigma = 1.0." << std::endl;
 }
 
 Normal::Normal(double mean, double std) {

@@ -14,7 +14,7 @@ add_library(monaco Uniform.cpp Normal.cpp Exponential.cpp Geometric.cpp
 ################################################################
 # Get Boost
 ################################################################
-find_package(Boost 1.67 COMPONENTS system filesystem iostreams REQUIRED)
+find_package(Boost COMPONENTS system filesystem iostreams REQUIRED)
 
 add_executable(monte_carlo main.cpp
         Uniform.cpp Normal.cpp

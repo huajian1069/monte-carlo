@@ -96,7 +96,7 @@ void VerifyCLT::visualise_CLT(std::string method) {
 
         gp << "set xrange[" << minimum << ":" << maximum << "]\n";
         gp << "set xlabel 'x'\n";
-        gp << "set title 'Normalised histogram of N = " << num_trials << " trials'\n";
+        gp << "set title 'Normalised histogram of N = " << num_trials << " trials, each with n = " << num_samples << " samples'\n";
         gp << "show title\n";
         gp << "bin_width = 0.1\n";
         gp << "set boxwidth bin_width\n";

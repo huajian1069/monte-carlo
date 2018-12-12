@@ -17,6 +17,7 @@ double my_func(double x1) {
     return x1 + pow(x1,2) - 3*x1;
 }
 
+
 int main() {
     std::cout << "Hello, World!" << std::endl;
 
@@ -36,6 +37,8 @@ int main() {
     }
 
     Exponential my_exponential(5.5);
+    Expectation my_mc_exp(&my_func);
+    my_mc_exp.calculate_sample_mean(my_exponential.generate(100));
 
     std::cout<<"\n";
     Normal pp;
@@ -43,22 +46,17 @@ int main() {
     double mean;
     mean=cal_exp.calculate_sample_variance(pp.generate(1000));
     std::cout<<mean<<"\n";
-    Moments solver(&my_exponential);
 
-    std::vector<unsigned int> my_ns{10,20,100,200,400,1000};
-    solver.visualise_monte_carlo(my_ns);
+    Moments my_moment(3,false,&my_func,&my_exponential);
+    std::vector<unsigned int> my_ns{10,20,100,200,400,1000,10000};
+    my_moment.visualise_monte_carlo(my_ns);
 
 
 
-    VerifyCLT exp_verify(1000, 1000, &my_exponential);
-    exp_verify.visualise_CLT("histogram");
+    VerifyCLT exp_verify(1000, 200, &my_exponential);
+    exp_verify.visualise_CLT();
     exp_verify.set_num_trials(50);
     exp_verify.visualise_CLT("qqplot");
 
-    Normal my_normal(0,2);
-    std::vector<double> my_normals(my_normal.generate(10000));
-    Gnuplot gp;
-    gp << "plot" << gp.file1d(my_normals) << "with boxes" << std::endl;
-    
     return 0;
 }

@@ -2,6 +2,7 @@
 // Created by pcsc on 12/2/18.
 //
 
+#include <iostream>
 #include "Exponential.hpp"
 #include "Exception.hpp"
 #include <cmath>
@@ -9,6 +10,7 @@
 Exponential::Exponential() {
     uniform = Uniform();
     lambda = 1.0;
+//    std::cout << "Exponential distribution initialised with rate 1.0." << std::endl;
 }
 
 Exponential::Exponential(double rate) {

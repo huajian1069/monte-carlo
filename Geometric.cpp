@@ -2,6 +2,7 @@
 // Created by pcsc on 12/2/18.
 //
 
+#include <iostream>
 #include "Geometric.hpp"
 #include <cmath>
 #include "Exception.hpp"
@@ -9,6 +10,7 @@
 Geometric::Geometric() {
     uniform = Uniform();
     probability = 0.5;
+//    std::cout << "Geometric distribution initialised with probability 0.5." << std::endl;
 }
 
 Geometric::Geometric(double p) {

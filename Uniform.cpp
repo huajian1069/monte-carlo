@@ -6,10 +6,12 @@
 #include "Exception.hpp"
 #include <chrono>
 #include <random>
+#include <iostream>
 
 Uniform::Uniform() {
     a = 0.0;
     b = 1.0;
+//    std::cout << "Uniform distribution initialised with minimum 0 and maximum 1." << std::endl;
 }
 
 Uniform::Uniform(double min, double max) {

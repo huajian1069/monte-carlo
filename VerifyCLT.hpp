@@ -22,7 +22,7 @@ public:
     unsigned int get_num_samples(); //!< Get number of samples in each trial of a simulation
     void set_num_trials(unsigned int n); //!< Set number of trails in a simulation
     unsigned int get_num_trials(); //!< Get number of trials in a simulation
-    void visualise_CLT(std::string method); //!< Visually verify the central limit theorem (histogram or probability plot)
+    void visualise_CLT(std::string method = "histogram"); //!< Visually verify the central limit theorem (default to histogram, or probability plot)
 };
 
 
