@@ -1,5 +1,0 @@
-if(EXISTS "/home/pcsc/monte-carlo/cmake-build-debug/test_my_distribution[1]_tests.cmake")
-  include("/home/pcsc/monte-carlo/cmake-build-debug/test_my_distribution[1]_tests.cmake")
-else()
-  add_test(test_my_distribution_NOT_BUILT test_my_distribution_NOT_BUILT)
-endif()

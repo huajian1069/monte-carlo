@@ -8,8 +8,8 @@ set(CMAKE_CXX_STANDARD 14)
 ################################################################
 # Build a library
 ################################################################
-add_library(monaco Uniform.cpp Normal.cpp Exponential.cpp Geometric.cpp
-        Moments.cpp Expectation.cpp VerifyCLT.cpp)
+add_library(monaco Distribution/Uniform.cpp Distribution/Normal.cpp Distribution/Exponential.cpp Distribution/Geometric.cpp
+        Moments/Moments.cpp Expectation/Expectation.cpp VerifyCLT/VerifyCLT.cpp)
 
 ################################################################
 # Get Boost
@@ -17,10 +17,10 @@ add_library(monaco Uniform.cpp Normal.cpp Exponential.cpp Geometric.cpp
 find_package(Boost COMPONENTS system filesystem iostreams REQUIRED)
 
 add_executable(monte_carlo main.cpp
-        Uniform.cpp Normal.cpp
-        Exponential.cpp Geometric.cpp
-        Moments.cpp Expectation.cpp
-        VerifyCLT.cpp)
+        Distribution/Uniform.cpp Distribution/Normal.cpp
+        Distribution/Exponential.cpp Distribution/Geometric.cpp
+        Moments/Moments.cpp Expectation/Expectation.cpp
+        VerifyCLT/VerifyCLT.cpp)
 
 target_link_libraries(monte_carlo PUBLIC ${Boost_LIBRARIES})
 
@@ -33,10 +33,10 @@ enable_testing()
 find_package(GTest)
 if (GTEST_FOUND)
     include_directories(${GTEST_INCLUDE_DIRS})
-    add_executable(test_my_distribution my_distribution_test.cpp)
-    add_executable(test_my_expectation my_expectation_test.cpp)
-    add_executable(test_my_moments my_moments_test.cpp)
-    add_executable(test_my_CLT my_CLT_test.cpp)
+    add_executable(test_my_distribution tests/my_distribution_test.cpp)
+    add_executable(test_my_expectation tests/my_expectation_test.cpp)
+    add_executable(test_my_moments tests/my_moments_test.cpp)
+    add_executable(test_my_CLT tests/my_CLT_test.cpp)
 #    add_executable(fixture_test fixture_test.cc)
     target_link_libraries(test_my_distribution ${GTEST_BOTH_LIBRARIES} pthread monaco)
     target_link_libraries(test_my_expectation ${GTEST_BOTH_LIBRARIES} ${Boost_LIBRARIES} pthread monaco)
